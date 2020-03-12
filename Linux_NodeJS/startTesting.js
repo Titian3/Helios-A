@@ -28,7 +28,7 @@ var startTest =function(serverID){
 
 	   exec('speedtest', ['-f', 'json', '-s', serverID], function(err, data) {  
 
-		           console.log(err);
+		           console.log("error:" + err);
 
 		           var results = JSON.parse(data);
 
